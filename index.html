@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOW Marketing Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+
+    <section class="sec-01">
+      <div class="container">
+        <h2 class="main-title">SHOW Marketing</h2>
+        <div class="content">
+          <div class="image">
+            <img src="img1.jpg" alt="">
+          </div>
+          <div class="text-box">
+           <!-- <h3>Lorem Ipsum</h3> -->
+            <h4>We are a Social Media, Marketing, and PR Company that strives to give our clients the most transparent 
+              and profitable performance in the market. Equipped with years of experience, a staff of Social Media experts,
+               Graphic and Web Designers, Photographers, and Videographers, we are well suited to handle all of your needs.
+               <!--We are a one stop shop for all your business needs. -->
+              </h4>
+          </div>
+        </div>
+        <div class="media-icons">
+          <a href="https://warmtexer.com"><i class="fa-solid fa-circle-user"></i></a>
+          <a href="services.html"><i class="fa-solid fa-sitemap"></i></a>
+          <a href="https://asatraining.co/"><i class="fa-solid fa-circle-user"></i></a>
+         <!-- <a href="#" class="icon"><i class="fab fa-youtube"></i></a> -->
+        </div>
+      </div>
+    </section>
+    <section class="sec-02">
+      <div class="container">
+        <h3 class="section-title">Our Focus is YOU</h3>
+        <div class="content">
+          <div class="image">
+            <img src="img2.jpg" alt="">
+          </div>
+          <div class="info">
+            <h4 class="info-title"></h4>
+            <h3>Whether you are already running your own ad campaign and are just looking for a better ROAS or you are looking 
+            to grow and take your business to the next level, we are here for you every step of the way providing support and 
+            attacking your problems for YOU.</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-03">
+      <div class="container">
+        <a href="mailto:" class="btn" ><h3>Schedule a Call</h3></a>
+        <br>
+        <br>
+        <br>
+        <div class="content">
+          <div class="media-info">
+            <li><a href="https://warmtexer.com"><i class="fa-solid fa-circle-user"></i> Certified client </a></li>
+            <li><a href="https://asatraining.co/"><i class="fa-solid fa-circle-user"></i> Certified client </a></li>
+            <li><a href="https://pianohandsmusic.github.io/"><i class="fa-solid fa-circle-user"></i> Certified client </a></li>
+            <li><a href="services.html"><i class="fa-solid fa-sitemap"></i> Our Services</a></li>
+            <li><a href="mailto:showmarketingpr@gmail.com"><i class="fa-solid fa-envelope"></i> Email </a></li>
+          </div>
+          <div class="image">
+            <img src="img3.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      //common reveal options to create reveal animations
+      ScrollReveal({
+        //reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 400
+      });
+
+      //target elements, and specify options to create reveal animations
+      ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left' });
+      ScrollReveal().reveal('.sec-01 .image, .info', { delay: 600, origin: 'bottom' });
+      ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+      ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
+      ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: 'top' });
+      ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });
+    </script>
+
+  </body>
+</html>
